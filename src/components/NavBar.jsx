@@ -53,13 +53,24 @@ function NavBar() {
                       {childItem.hasChildren && grandchildVisible && (
                         <ul className="absolute top-0 left-full ml-1  hidden group-hover:block bg-white w-[300px] rounded-lg">
                           {childItem.children.map((gchildItem, gchildIndex) => (
-                            <li key={gchildIndex}>
-                              <a
-                                href={gchildItem.path}
-                                className="block p-4 hover:text-[#007BFF]"
-                              >
-                                {gchildItem.title}
-                              </a>
+                            <li
+                              onClick={() => {
+                                if (childItem.sectionId) {
+                                  const element = document.getElementById(
+                                    childItem.sectionId
+                                  );
+                                  if (element) {
+                                    // 👇 Will scroll smoothly to the top of the next section
+                                    element.scrollIntoView({
+                                      behavior: "smooth",
+                                    });
+                                  }
+                                }
+                              }}
+                              className="block p-4 hover:text-[#007BFF]"
+                              key={gchildIndex}
+                            >
+                              {gchildItem.title}
                             </li>
                           ))}
                         </ul>
