@@ -44,7 +44,7 @@ function HeroSlider() {
             >
               <div className="mt-20 pb-4 pl-4 lg:pb-12 lg:pl-12 flex flex-col justify-center space-y-10 w-full h-full ">
                 <div className="lg:w-[50%]">
-                  <h1 className="font-bold text-3xl lg:text-6xl mb-4 lg:mb-8">
+                  <h1 className="font-bold text-3xl lg:text-7xl mb-4 lg:mb-8">
                     {itm.heading}
                   </h1>
                   <p className="font-light lg:font-normal text-sm lg:text-lg">

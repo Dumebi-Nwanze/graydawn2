@@ -183,7 +183,7 @@ export const heroSection = [
   },
   {
     id: 342365,
-    heading: "Custom Software Development)",
+    heading: "Custom Software Development",
     desc: "We design and engineer bespoke software solutions tailored to business needs and objectives. From web, mobile applications and enterprise solutions to business consultancy and IT analysis.",
     btnRoute: "/",
   },
