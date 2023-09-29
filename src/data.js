@@ -242,7 +242,7 @@ export const management = [
   },
   {
     name: "Clinton Dike",
-    title: "VP of The Board",
+    title: "CTO",
     image: "/assets/ceo.jpg",
     link: "",
   },
@@ -260,7 +260,7 @@ export const management = [
   },
   {
     name: "Clinton Dike",
-    title: "CTO",
+    title: "CMO",
     image: "/assets/ceo.jpg",
     link: "",
   },
